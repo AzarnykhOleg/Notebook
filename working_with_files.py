@@ -3,10 +3,7 @@ import Note
 
 def write_file(array, mode):
     """
-    TODO
-    :param array:
-    :param mode:
-    :return:
+    Функция создания файла хранения заметок и записи в него заметок.
     """
     file = open('notes.csv', mode='w', encoding='utf-8')
     file.seek(0)
@@ -20,8 +17,7 @@ def write_file(array, mode):
 
 def read_file():
     """
-    TODO
-    :return:
+    Функция чтения заметок из файла.
     """
     try:
         array = []

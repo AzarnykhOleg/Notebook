@@ -3,9 +3,10 @@ import Note
 
 def create_note(number):
     """
-    TODO
-    :param number:
-    :return:
+    Функция создания заметки, состоящей из названия и непосредственно тела.
+    :param number: текст
+    :return: объект класса Note (Заметка), включающий id (уникальный номер),
+            title (название), body (тело), date (дата и время создания)
     """
     title = check_len_text_input(
         input('Введите Название заметки: '), number)
@@ -16,8 +17,8 @@ def create_note(number):
 
 def menu():
     """
-    TODO
-    :return:
+    Функция вызова пользовательского меню
+    :return: текст
     """
     print("\nЭто программа 'Заметки'. Имеются следующие функции:"
           "\n\n1 - показать все заметки"
@@ -32,10 +33,10 @@ def menu():
 
 def check_len_text_input(text, n):
     """
-    TODO
-    :param text:
-    :param n:
-    :return:
+    Функция проверки соответствия длины введённого пользователем текста минимальным значениям, заданным в настройках.
+    :param text: текст
+    :param n: число (настройки, заданные по-умолчанию в программе)
+    :return: текст
     """
     while len(text) <= n:
         print(f'Текст должен быть больше {n} символов\n')
@@ -45,8 +46,4 @@ def check_len_text_input(text, n):
 
 
 def buy():
-    """
-    TODO
-    :return:
-    """
-    print("Приходите к нам еще =). До новых встреч!")
+    print("До свидания!")
